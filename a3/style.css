@@ -1,0 +1,73 @@
+body {
+  background-color: #F9FF71;
+  font-family: 'Courier', monospace;
+  font-size: 18px;
+  color: #95497A;
+}
+
+h1 {
+  color: purple;
+  font-family: 'Courier', monospace;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px #9575B9;
+}
+/*Added a text shadow to my title!*/
+
+h2 {
+	color: #322E83;
+	font-family: 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+img {
+  border: 3px solid #322E83;
+}
+
+address {
+  text-align: center;
+}
+
+a {
+  color: #D34CFF;
+  text-decoration: none;
+}
+
+ a:hover {
+  color: #5D1F71;
+}
+
+#press {
+  color: #D34CFF;
+  text-decoration: none;
+}
+
+#para1 {
+	color: #95497A;
+}
+
+#para2 {
+	color: #95497A;
+}
+
+#chemX {
+  color: red;
+}
+
+.hobby {
+  text-decoration: underline;
+}
+
+td.workExpTitle {
+	text-align: center;
+}
+
+td.dateOfWork {
+	text-align: center;
+}
+
+tr.titles {
+	color: #9575B9;
+  font-family: 'Courier', monospace;
+}
