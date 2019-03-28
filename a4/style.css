@@ -1,0 +1,229 @@
+body {
+	font-size: 15;
+	background-color: lightblue;
+}
+
+h1 {
+  color: #5882FA;
+  font-family: 'Courier', monospace;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 4px #E0ECF8;
+}
+
+h2 {
+  color: white;
+  font-family: 'Courier', monospace;
+  font-size: 30px;
+  text-align: center;
+}
+
+h4 {
+	font-style: italic;
+	color: #E0ECF8;
+}
+
+p{
+	font-family:'Helvetica', sans-serif;
+}
+
+li{
+	list-style-type: disc;
+	font-family: 'Helvetica', sans-serif; 
+	font-style: italic;
+	color: white;
+}
+
+ul{
+	list-style-position: center;
+}
+
+.img {
+	max-width: 100%;
+	grid-gap:20px;
+}
+
+.container {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.topSection{
+	display:grid;
+	grid-gap: 20px;
+	text-align: center;
+	grid-template-areas: "logo logo income"
+					     "logo logo population";
+}
+
+.topSectionb{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.frosted{
+	background-color: #BAE6EB;
+	text-decoration-color: white;
+	width:300px;
+	height: 130px;
+	padding-left: 10px; 
+	font-family: 'Slabo 27px', serif;
+	color: white;
+}
+
+.frostedb{
+	background-color: #BAE6EB;
+	padding-left: 10px; 
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Slabo 27px', serif;
+	color: white;
+}
+
+
+.pageLogo{
+	grid-area: logo;
+	min-height: 300px;
+	background: blue;
+	background-image: url("aventuraturnberry.jpg");
+	color: white;
+	background-size: cover;
+	background-position: bottom right;
+	padding: 40px;
+	display: grid;
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	size: 50px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	background-color: #A9D0F5;
+}
+
+.menu a:hover{
+	text-decoration-line: overline underline;
+	text-decoration-style: wavy;
+}
+
+.features{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmamx (200px, 1fr));
+}
+
+.feature h3{
+	color: white;
+}
+
+.feature{
+	background: #0080FF;
+	padding: 10px;
+	border: 1px solid white;
+	text-align: center;
+}
+
+.feature .icon{
+	font-size: 50px;
+	color: lightblue;
+}
+
+.feature p{
+	color: white;
+}
+
+.about{
+	background: #2E2EFE;
+	color: white;
+	justify-content: start;
+	align-content: start;
+}
+
+.infoBox p{
+	background-color: #5882FA;
+	color: white;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.infoBox p{
+	margin: 0;
+}
+
+.price{
+	font-size: 60px;
+	font-weight: 300;
+}
+
+.population{
+	grid-area: population;
+}
+
+.income{
+	grid-area: income;
+}
+
+.frosted p{
+	font-size: 16px;
+}
+
+.menu ul{
+	display: grid;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(auto-fit, minmamx(100px, 1fr));
+}
+
+.wavy{
+	margin-right: 10px;
+	text-align: center;
+	font-size: 24px;
+	background-color: #819FF7;
+
+	padding: 50px;
+	display: grid;
+	grid-template-columns: 400px, 1fr;
+}
+
+@media(max-width: 700px){
+	.topSection{
+		grid-template-areas: 
+		"logo" "logo"
+		"population" "income";} }
+	li{
+		font-size: 14px;
+		margin-bottom: 20px;
+		height:7px; 
+	   }
+}
+
+@media (max-width: 500px){
+	.topSection{
+		grid-template-areas: 
+		"logo"
+		"population"
+		"income"
+	 		   }
+
+	 .price{
+	 	font-size: 24px;
+	 	font-weight: 300;
+	 	margin-left: 10px;
+	 }
+
+	 .img{
+	 	width: 250px;
+	 	border: solid;
+	 	border-color: darkblue;
+	 }
+
+	 }
+
+	 .about{
+	 	grid-template-columns: 300px;
+	 }
+}
+
