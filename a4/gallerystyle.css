@@ -74,7 +74,8 @@ div.desc {
 }
 
 .wavy{
-   margin-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 24px;
   background-color: #819FF7;
